@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ReproRelay Demo · Buggy Signup</title>
+  <style>
+    * { box-sizing:border-box; }
+    body { font-family:system-ui,sans-serif; min-height:100vh; background:#efedff; display:grid; place-items:center; margin:0; color:#251c49; }
+    .card { width:min(92vw,420px); background:#fff; border-radius:20px; padding:30px; box-shadow:0 20px 65px #5146a62b; }
+    h1 { margin:0; } p { color:#766f94; }
+    label { display:block; font-size:13px; font-weight:700; margin:18px 0 6px; }
+    input { width:100%; padding:13px; border:1px solid #cac5e0; border-radius:8px; }
+    button { width:100%; background:#6851e8; color:white; padding:14px; border:0; border-radius:9px; cursor:pointer; margin-top:25px; font-weight:700; }
+    .tip { padding:12px; background:#fff4d6; color:#806218; border-radius:9px; font-size:13px; margin-top:20px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>TeamSpace</h1>
+    <p>Create an account to join your team.</p>
+    <label for="email">Work email</label>
+    <input id="email" type="email" placeholder="you@company.com" />
+    <label for="password">Password</label>
+    <input id="password" type="password" placeholder="••••••••" />
+    <button id="submit-btn" type="button">Create account</button>
+    <div class="tip">Known demo defect: “Create account” does nothing. Capture this button with ReproRelay.</div>
+  </div>
+</body>
+</html>

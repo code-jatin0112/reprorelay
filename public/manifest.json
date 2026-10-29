@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "ReproRelay — Bug Reporter",
+  "version": "0.1.0",
+  "description": "Select a broken element and export a developer-ready bug report. Data stays local.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "action": {
+    "default_title": "ReproRelay",
+    "default_popup": "index.html"
+  }
+}
